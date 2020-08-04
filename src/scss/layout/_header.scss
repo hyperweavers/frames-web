@@ -48,6 +48,7 @@
 
 .lights-toggle {
   color: color(typography, 1);
+  -webkit-tap-highlight-color: transparent;
 
   .lights-off & {
     color: color(typography, 1i);
