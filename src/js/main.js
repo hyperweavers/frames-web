@@ -3,11 +3,17 @@
   const rootEl = doc.documentElement
   const body = doc.body
   const lightSwitch = doc.getElementById('lights-toggle')
+  const copyright = doc.getElementById('copyright-year')
+
   /* global ScrollReveal */
   const sr = window.sr = ScrollReveal()
 
   rootEl.classList.remove('no-js')
   rootEl.classList.add('js')
+
+  if (copyright) {
+    copyright.innerText = new Date().getFullYear()
+  }
 
   window.addEventListener('load', function () {
     body.classList.add('is-loaded')
